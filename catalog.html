@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <title>
     <meta charset="utf-8">
@@ -7,31 +7,54 @@
   </title>
 </head>
 <body>
-  <header>
-    <a href="index.html">
-      <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
-    </a>
-    <ul>
-      <li><a href="info.html">Информация</a></li>
-      <li><a href="news.html">Новости</a></li>
-      <li><a href="price.html">Прайс-лист</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <ul>
-      <li><button type="button">Вход</button></li>
-    </ul>
+  <header class="page-header">
+    <!-- меню навигации -->
+    <nav class="menu">
+      <a class="menu-logo-link" href="index.html">
+        <img class="header-logo" src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+      </a>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a class="menu-link" href="info.html">Информация</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="news.html">Новости</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="price.html">Прайс-лист</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="catalog.html">Магазин</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+      <!-- действия -->
+      <ul class="header-action">
+        <li class="header-action-item">
+          <button class="header-action-button sign-up" type="button">Вход</button>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <h1>Средства для ухода</h1>
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li>Средства для ухода</li>
+  <main class="page-main">
+    <h1 class="main-header">Средства для ухода</h1>
+    <!-- хлебные крошки -->
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="catalog.html">Магазин</a>
+      </li>
+      <li class="breadcrumbs-item">
+        Средства для ухода
+      </li>
     </ul>
 
-    <section>
+    <section class="product-filters">
       <h2>Фильтр товаров</h2>
 <!--       <h2>Производители</h2>
       <ul>
@@ -54,129 +77,150 @@
       <button type="button">Показать</button> -->
     </section>
 
-    <section>
-      <h3>Список средств для ухода</h3>
-        <ul>
-          <li>
-            <h3>
-              <a href="catalog-item.html">
-                <span>Набор для путешествий</span>
-                <span>«Baxter of California»</span>
+    <section class="catalog-content">
+      <h2>Список средств для ухода</h3>
+        <ul class="catalog-list">
+          <!-- новая карточка -->
+          <li class="card">
+            <h3 class="card-headline">
+              <a class="card-link" href="catalog-item.html">
+                <span class="card-content card-category">Набор для путешествий</span>
+                <span class="card-content card-name">«Baxter of California»</span>
               </a>
             </h3>
-            <a href="catalog-item.html">
-              <img src="img/product-1.jpg" alt="Набор для путешествий «Baxter of California»" width="220" height="165">
+            <a class="card-large-link" href="catalog-item.html">
+              <img class="card-img" src="img/product-1.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
             </a>
-            <p>
+            <p class="card-price">
               2 900₽
-              <a href="#">Купить</a>
+              <a class="card-price-link" href="#">Купить</a>
             </p>
           </li>
-          <li>
-            <h3>
-              <a href="catalog-item.html">
-                <span>Увлажняющий кондиционер</span>
-                <span>«Baxter of California»</span>
+          <!-- новая карточка -->
+          <li class="card">
+            <h3 class="card-headline">
+              <a class="card-link" href="catalog-item.html">
+                <span class="card-content card-category">Увлажняющий кондиционер</span>
+                <span class="card-content card-name">«Baxter of California»</span>
               </a>
             </h3>
-            <a href="catalog-item.html">
-              <img src="img/product-2.jpg" alt="Увлажняющий кондиционер «Baxter of California»" width="220" height="165">
+            <a class="card-large-link" href="catalog-item.html">
+              <img class="card-img" src="img/product-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер «Baxter of California»">
             </a>
-            <p>
+            <p class="card-price">
               750₽
-              <a href="#">Купить</a>
+              <a class="card-price-link" href="#">Купить</a>
             </p>
           </li> 
-          <li>
-            <h3>
-              <a href="catalog-item.html">
-                <span>Гель для волос</span>
-                <span>«Suavecito»</span>
+          <!-- новая карточка -->
+          <li class="card">
+            <h3 class="card-headline">
+              <a class="card-link" href="catalog-item.html">
+                <span class="card-content card-category">Гель для волос</span>
+                <span class="card-content card-name">«Suavecito»</span>
               </a>
             </h3>
-            <a href="catalog-item.html">
-              <img src="img/product-3.jpg" alt="«Suavecito»" width="220" height="165">
+            <a class="card-large-link" href="catalog-item.html">
+              <img class="card-img" src="img/product-3.jpg" width="220" height="165" alt="Гель для волос «Suavecito»">
             </a>
-            <p>
+            <p class="card-price">
               290₽
-              <a href="#">Купить</a>
+              <a class="card-price-link" href="#">Купить</a>
             </p>
           </li> 
-          <li>
-            <h3>
-              <a href="catalog-item.html">
-                <span>Глина для укладки волос</span>
-                <span>«American Crew»</span>
+          <!-- новая карточка -->
+          <li class="card">
+            <h3 class="card-headline">
+              <a class="card-link" href="catalog-item.html">
+                <span class="card-content card-category">Глина для укладки волос</span>
+                <span class="card-content card-name">«American Crew»</span>
               </a>
             </h3>
-            <a href="catalog-item.html">
-              <img src="img/product-4.jpg" alt="Глина для укладки волос «American Crew»" width="220" height="165">
+            <a class="card-large-link" href="catalog-item.html">
+              <img class="card-img" src="img/product-4.jpg" width="220" height="165" alt="Глина для укладки волос «American Crew»">
             </a>
-            <p>
+            <p class="card-price">
               500₽
-              <a href="#">Купить</a>
+              <a class="card-price-link" href="#">Купить</a>
             </p>
-          </li>     
-          <li>
-            <h3>
-              <a href="catalog-item.html">
-                <span>Гель для волос</span>
-                <span>«American Crew»</span>
+          </li>    
+          <!-- новая карточка --> 
+          <li class="card">
+            <h3 class="card-headline">
+              <a class="card-link" href="catalog-item.html">
+                <span class="card-content card-category">Гель для волос</span>
+                <span class="card-content card-name">«American Crew»</span>
               </a>
             </h3>
-            <a href="catalog-item.html">
-              <img src="img/product-5.jpg" alt="Гель для волос «American Crew»" width="220" height="165">
+            <a class="card-large-link" href="catalog-item.html">
+              <img class="card-img" src="img/product-5.jpg" width="220" height="165" alt="Гель для волос «American Crew»">
             </a>
-            <p>
+            <p class="card-price">
               300₽
-              <a href="#">Купить</a>
+              <a class="card-price-link" href="#">Купить</a>
             </p>
           </li> 
-          <li>
-            <h3>
-              <a href="catalog-item.html">
-                <span>Набор для бритья</span>
-                <span>«Baxter of California»</span>
+          <!-- новая карточка -->
+          <li class="card">
+            <h3 class="card-headline">
+              <a class="card-link" href="catalog-item.html">
+                <span class="card-content card-category">Набор для бритья</span>
+                <span class="card-content card-name">«Baxter of California»</span>
               </a>
             </h3>
-            <a href="catalog-item.html">
-              <img src="img/product-6.jpg" alt="Набор для бритья «Baxter of California»" width="220" height="165">
+            <a class="card-large-link" href="catalog-item.html">
+              <img class="card-img" src="img/product-6.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
             </a>
-            <p>
+            <p class="card-price">
               3 900₽
-              <a href="#">Купить</a>
+              <a class="card-price-link" href="#">Купить</a>
             </p>
           </li>         
         </ul>
 
-    <section>
-    <ol>
-      <li><a href="#">1</a></li>
-      <li><a>2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-    </ol>
-    </section>
+        <!-- нумерация страниц -->
+        <ol class="pagination">
+          <li class="pagination-item">
+            <button class="pagination-item-btn" type="button">1</button>
+          </li>
+          <li class="pagination-item">
+            <button class="pagination-item-btn">2</button>
+            </li>
+          <li class="pagination-item">
+            <button class="pagination-item-btn" type="button">3</button>
+          </li>
+          <li class="pagination-item">
+            <button class="pagination-item-btn" type="button">4</button>
+          </li>
+        </ol>
   </main>
 
-  <footer>
-    <p>
+  <footer class="page-footer">
+    <p class="footer-contacts">
       Барбершоп «Бородинский»<br>
       Адрес: г. Санкт-петербург, ул. Б. Конюшенная, д. 19/8<br>
-      <a href="map.html">Как нас найти?</a><br>
+      <a class="footer-contacts-link" href="map.html">Как нас найти?</a><br>
       Телефон: +7 (495) 666-02-66
     </p>
-    <div>
-      <p>Давайте дружить!</p>
-      <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+    <div class="footer-social">
+      <p class="footer-social-head">Давайте дружить!</p>
+      <!-- кнопки социальных сетей -->
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="#">Вконтакте</a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="#">Фейсбук</a>
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="#">Инстаграм</a>
+        </li>
       </ul>
     </div>
-    <p>
+    <!-- копирайт -->
+    <p class="footer-copyright">
       Разработано:
-      <a href="https://htmlacademy.ru">HTML Academy</a>
+      <a class="footer-copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
     </p>
   </footer>
 
@@ -187,6 +231,6 @@
     <button type="button">Закрыть</button>
   </section>
 
-  <
+  
   </body>
 </html>
