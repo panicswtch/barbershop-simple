@@ -9,7 +9,9 @@
     <header class="page-header">
       <!-- меню навигации -->
       <nav class="menu">
-        <img class="header-logo" src="img/main-logo.svg" width="371" height="155" alt="Логотип барбершопа «Бородинский»">
+        <a class="header-logo-link" href="index.html">
+          <img class="header-logo" src="img/main-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+        </a>
         <ul class="menu-list">
           <li class="menu-item">
             <a class="menu-link" href="info.html">Информация</a>
@@ -30,7 +32,7 @@
         <!-- действия пользователя -->
         <ul class="header-action">
           <li class="header-action-item">
-            <button class="header-action-button sign-up" type="button">Войти</button>
+            <a class="header-action-button sign-up" href="login.html">Войти</a>
           </li>
         </ul>
       </nav>
@@ -39,83 +41,109 @@
 
     <!-- основная часть -->
     <main class="page-main">
-      <h1>Барбершоп «Бородинский»</h1>
+      <!-- скрытый заголовок -->
+      <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
+
       <!-- преимущества -->
       <section class="advantages">
-        <h2 class="advantages-headline">Преимущества</h2>
+        <!-- скрытый заголовок -->
+        <h2 class="visually-hidden">Преимущества барбершопа</h2>
+        <!-- список преимуществ -->
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-item-headline">Быстро</h3>
-            <p class="advantages-item-content">
+            <p class="advantages-item-content text">
               Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-item-headline">Круто</h3>
-            <p class="advantages-item-content">
+            <p class="advantages-item-content text">
               Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-item-headline">Дорого</h3>
-            <p class="advantages-item-content">
+            <p class="advantages-item-content text">
               Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
           </li>
         </ul>
       </section>
 
+      <!-- новости -->
       <section class="news"> 
-        <!-- новости -->
-        <h2>Новости</h2>
-
+        <h2 class="news-headline base-headline">Новости</h2>
+        <!-- список новостей -->
         <ul class="news-list">
           <li class="news-item">
-            <p class="news-content">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик-другой во время стрижки</p>
+            <p class="news-content text">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик-другой во время стрижки</p>
             <time class="news-time" datetime="2019-01-11">11 января</time>
           </li>
           <li class="news-item">
-            <p class="news-content">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград, пополнил наши стройные ряды</p>
+            <p class="news-content text">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград, пополнил наши стройные ряды</p>
             <time class="news-time" datetime="2019-01-18">18 января</time>
           </li>
         </ul>
-        <a class="news-link" href="news.html">Все новости</a>
+        <a class="news-link btn-black" href="news.html">Все новости</a>
       </section>
 
       <!-- фотогалерея -->
       <section class="gallery">
-        <h2>Фотогалерея</h2>
-        <figure class="gallery-wrapper">
-          <a class="gallery-fullsize" href="#">
-            <img class="gallery-img" src="img/interior.jpg" width="286" height="164" alt="Интерьер барбершопа">
+        <h2 class="gallery-headline base-headline">Фотогалерея</h2>
+        <figure class="gallery-content">
+          <a class="gallery-link" href="#">
+            <img class="gallery-image" src="img/interior.jpg" width="286" height="164" alt="Интерьер барбершопа">
           </a>
         </figure>
-        <button class="gallery-switcher next" type="button">Назад</button>
-        <button class="gallery-switcher prev" type="button">Вперед</button>
+        <button class="gallery-btn gallery-btn-back btn-black" type="button">Назад</button>
+        <button class="gallery-btn gallery-btn-next btn-black" type="button">Вперед</button>
       </section>
 
       <!-- контакты -->
       <section class="contacts">
-        <h2 class="contacts-header">Контактная информация</h2>
-        <p class="contacts-content">
+        <h2 class="contacts-header base-headline">Контактная информация</h2>
+        <p class="contacts-content text">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           Телефон: +7 (495) 666-02-66
         </p>
-        <p class="contacts-content">
+        <p class="contacts-content text">
           Время работы:<br>
           Пн—пт: с 10:00 до 22:00<br>
           Сб—вс: с 10:00 до 19:00
         </p>
-        <a class="contacts-link" href="map.html">Как проехать</a>
-        <a class="contacts-link" href="contacts.html">Обратная связь</a>
+        <a class="contacts-link btn-black" href="map.html">Как проехать</a>
+        <a class="contacts-link btn-black" href="contacts.html">Обратная связь</a>
       </section>
 
       <!-- запись на стрижку -->
-      <section class="appointment">
-        <h2 class="appointment-header">Записаться</h2>
-        <p class="appointment-content">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <!-- Здесь будет форма -->
+      <section class="sign">
+        <h2 class="sign-headline base-headline">Записаться</h2>
+        <p class="sign-content text">
+          Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+        </p>
+        <form class="sign-form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <div class="sign-wrapper">
+            <label class="sign-label" for="sign-date">Дата</label>
+            <input class="sign-input" id="sign-date" type="date" name="date" value="2017-10-08">
+          </div>
+          <div class="sign-wrapper">
+            <label class="sign-label" for="sign-time">Время</label>
+            <input class="sign-input" id="sign-time" type="time" name="time" value="10:00">            
+          </div>
+          <div class="sign-wrapper">
+            <label class="sign-label" for="sign-name">Ваше имя</label>
+            <input class="sign-input" id="sign-name" type="text" name="name" value="" placeholder="Борода">
+          </div>
+          <div class="sign-wrapper">
+            <label class="sign-label" for="">Телефон</label>
+            <input class="sign-input" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+          </div>
+          <button class="sign-button btn-black" type="submit" name="submit">
+        </form>
       </section>
     </main>
+    <!-- ./ конец основной части -->
 
+    <!-- подвал -->
     <footer class="page-footer">
       <p class="footer-contacts">
         Барбершоп «Бородинский»<br>
@@ -141,20 +169,40 @@
       <!-- копирайт -->
       <p class="footer-copyright">
         Разработано:
-        <a class="footer-copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="footer-copyright-link btn-black" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
+    <!-- конец подвала -->
 
-    <section>
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
-      <button type="button">Закрыть</button>
+    <!-- окно входа в аккаунт -->
+    <section class="account pop-up">
+      <h2 class="account-headline">Личный кабинет</h2>
+      <p class="account-text text">Введите свой логин и пароль.</p>
+      <form class="account-action" action="https://echo.htmlacademy.ru/courses" method="post">
+        <div class="account-action-wrapper">
+          <label class="visually-hidden" for="account-login">Логин</label>
+          <input class="account-action-item" id="account-login" type="text" name="login" placeholder="Логин">
+        </div>
+        <div class="account-action-wrapper">
+          <label class="visually-hidden" for="account-password">Пароль</label>            
+          <input class="account-action-item" id="account-password" type="text" name="password" placeholder="Пароль">
+        </div>
+        <div class="account-action-wrapper">
+          <input class="account-checkbox" id="account-remember" type="checkbox" name="remember" checked>
+          <label class="text" for="account-remember">Запомните меня</label>
+          <a class="account-btn btn-black" href="#">Я забыл пароль!</a>
+        </div>
+        <button class="account-enter" type="submit" name="enter">Войти</button>
+      </form>
+      <button class="account-close close" type="button">Закрыть</button>
     </section>
 
-    <section>
-      <h2>Как до нас добраться</h2>
-      <button type="button">Закрыть</button>
+    <section class="map pop-up">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="map-wrapper">
+        <img class="map-content" src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </div>
+      <button class="map-close close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

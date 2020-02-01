@@ -5,11 +5,13 @@
   <title>Прайс-лист барбершопа «Бородинский»</title>
 </head>
 <body>
-    <!-- шапка -->
+  <!-- шапка страницы -->
   <header class="page-header">
     <!-- меню навигации -->
     <nav class="menu">
-      <img class="header-logo" src="img/main-logo.svg" width="371" height="155" alt="Логотип барбершопа «Бородинский»">
+      <a class="menu-logo-link" href="index.html">
+        <img class="header-logo" src="img/small-logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+      </a>
       <ul class="menu-list">
         <li class="menu-item">
           <a class="menu-link" href="info.html">Информация</a>
@@ -27,18 +29,19 @@
           <a class="menu-link" href="contacts.html">Контакты</a>
         </li>
       </ul>
-      <!-- действия пользователя -->
+      <!-- действия -->
       <ul class="header-action">
         <li class="header-action-item">
-          <button class="header-action-button sign-up" type="button">Войти</button>
+          <button class="header-action-button sign-up" type="button">Вход</button>
         </li>
       </ul>
     </nav>
   </header>
-  <!-- ./ конец шапки -->
+  <!-- ./конец шапки -->
 
   <!-- основная часть страницы -->
   <main class="page-main">
+    <!-- заголовок страницы -->
     <h1 class="main-headline">Прайс-лист</h1>
 
     <!-- хлебные крошки -->
@@ -51,52 +54,58 @@
       </li>
     </ul>
 
-    <!-- средства -->
-    <section class="tool">
-      <h2 class="tool-headline">Мы используем только лучшие средства:</h2>
-      <ul class="tool-list">
-        <li class="tool-item">Baxter of California</li>
-        <li class="tool-item">Mr Natty</li>
-        <li class="tool-item">Suavecito</li>
-        <li class="tool-item">Malin+Goetz</li>
+    <!-- слоган в центре страницы -->
+    <p class="slogan">Истинно мужская классика</p>
+
+    <!-- список средств для ухода -->
+    <section class="products">
+      <h2 class="visually-hidden">Средства для ухода</h2>
+      <p class="products-text">Мы используем только лучшие средства:</p>
+      <ul class="products-list">
+        <li class="products-item">Baxter of California</li>
+        <li class="products-item">Mr Natty</li>
+        <li class="products-item">Suavecito</li>
+        <li class="products-item">Malin+Goetz</li>
       </ul>
     </section>
 
+    <!-- таблица с прайсом -->
     <section class="price">
-      <h2 class="price-headline">Цены на услуги<br>
-       наших мастеров:</h2>
-       <table class='price-table'>
+      <h2 class="visually-hidden">Цены</h2>
+      <p class="price-text">Цены на услуги<br>
+       наших мастеров:</p>
+      <table class="price-table">
         <tr>
-          <td class="table-service">Стрижка</td>
-          <td class="table-price">1500 ₽</td>
+          <td class="cell-service">Стрижка</td>
+          <td class="cell-price">1500 ₽</td>
         </tr>
         <tr>
-          <td class="table-service">Стрижка бороды</td>
-          <td class="table-price">500 ₽</td>
+          <td class="cell-service">Стрижка бороды</td>
+          <td class="cell-price">500 ₽</td>
         </tr>
         <tr>
-          <td class="table-service">Накрутка усов</td>
-          <td class="table-price">350 ₽</td>
+          <td class="cell-service">Накрутка усов</td>
+          <td class="cell-price">350 ₽</td>
         </tr>
        </table>
     </section>
 
     <!-- несколько слов о нас -->
     <section class="some-words">
-        <h2 class="some-words-headline">Несколько слов о нас:</h2>
-        <div class="wrapper">
-          <p class="some-words-content">
-            Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
-          </p>
-
-          <p class="some-words-content">
-            Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
-          </p>
+      <h2 class="some-words-headline">Несколько слов о нас:</h2>
+      <div class="wrapper">
+        <p class="some-words-content">
+          Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+        </p>
+        <p class="some-words-content">
+          Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
+        </p>
       </div>
     </section>
   </main>
   <!-- /.конец основной части -->
 
+  <!-- начало подвала -->
   <footer class="page-footer">
     <p class="footer-contacts">
       Барбершоп «Бородинский»<br>
@@ -122,15 +131,32 @@
     <!-- копирайт -->
     <p class="footer-copyright">
       Разработано:
-      <a class="footer-copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+      <a class="footer-copyright-link btn-black" href="https://htmlacademy.ru">HTML Academy</a>
     </p>
   </footer>
+  <!-- ./конец подвала -->
 
-  <section>
-    <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль.</p>
-    <!-- Здесь будет форма -->
-    <button type="button">Закрыть</button>
+  <!-- скрытый блок - вход в аккаунт -->
+  <section class="account pop-up">
+    <h2 class="account-headline">Личный кабинет</h2>
+    <p class="account-text text">Введите свой логин и пароль.</p>
+    <form class="account-action" action="https://echo.htmlacademy.ru/courses" method="post">
+      <div class="account-action-wrapper">
+        <label class="visually-hidden" for="account-login">Логин</label>
+        <input class="account-action-item" id="account-login" type="text" name="login" placeholder="Логин">
+      </div>
+      <div class="account-action-wrapper">
+        <label class="visually-hidden" for="account-password">Пароль</label>            
+        <input class="account-action-item" id="account-password" type="text" name="password" placeholder="Пароль">
+      </div>
+      <div class="account-action-wrapper">
+        <input class="account-checkbox" id="account-remember" type="checkbox" name="remember" checked>
+        <label class="text" for="account-remember">Запомните меня</label>
+        <a class="account-btn btn-black" href="#">Я забыл пароль!</a>
+      </div>
+      <button class="account-enter" type="submit" name="enter">Войти</button>
+    </form>
+    <button class="account-close close" type="button">Закрыть</button>
   </section>
 </body>
 </html>
