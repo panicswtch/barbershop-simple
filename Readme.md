@@ -5,9 +5,9 @@
 
 Сайт барбершопа «Бородинский», сверстанный в рамках курса «HTML и CSS, уровень 1» от HTML Academy. Страницы не адаптивные.
 
-[Посмотреть работу.](https://panicswtch.github.io/barbershop-simple)
-
 **Стек**: HTML5, CSS (flex).
+
+[Посмотреть работу](https://panicswtch.github.io/barbershop-simple)
 
 ## Что сделано:
 1. Главная страница;
