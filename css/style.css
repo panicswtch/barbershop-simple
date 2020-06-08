@@ -688,10 +688,18 @@ input[type="radio"].visually-hidden {
 /*карточка товара*/
 
 .gallery-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .gallery-main-big {
+  margin-bottom: 0;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -705,6 +713,8 @@ input[type="radio"].visually-hidden {
 }
 
 .description-product-price {
+  margin: 0 20px;
+
   line-height: 20px;
   text-align: center;
 
@@ -717,7 +727,7 @@ input[type="radio"].visually-hidden {
 }
 
 .description-set-list {
-  list-style: none;
+  list-style-type: disc;
 }
 
 /*Сеточные стили*/
